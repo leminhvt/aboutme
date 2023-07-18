@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!--PUBLIC -->
+	<definition name="aboutme.public.template"
+		template="/WEB-INF/templates/public/template.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/templates/public/header.jsp" />
+		<put-attribute name="title" value="Dự án aboutme" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/templates/public/footer.jsp" />
+	</definition>
+
+	<definition name="aboutme.public.index"
+		extends="aboutme.public.template">
+		<put-attribute name="body"
+			value="/WEB-INF/views/public/index.jsp" />
+	</definition>
+	<definition name="aboutme.public.blog"
+		extends="aboutme.public.template">
+		<put-attribute name="body"
+			value="/WEB-INF/views/public/blog.jsp" />
+	</definition>
+	<definition name="aboutme.public.cat"
+		extends="aboutme.public.template">
+		<put-attribute name="body"
+			value="/WEB-INF/views/public/cat.jsp" />
+	</definition>
+	
+	<!--ADMIN -->
+	<definition name="aboutme.admin.template"
+		template="/WEB-INF/templates/admin/template.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/templates/admin/header.jsp" />
+		<put-attribute name="leftbar"
+			value="/WEB-INF/templates/admin/leftbar.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/templates/admin/footer.jsp" />
+	</definition>
+	<definition name="aboutme.admin.index.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Dự án Aboutme" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/index/index.jsp" />
+	</definition>
+
+	<definition name="aboutme.admin.cat.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách danh mục" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/cat/index.jsp" />
+	</definition>
+	<definition name="aboutme.admin.cat.add"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm danh mục" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/cat/add.jsp" />
+	</definition>
+	<definition name="aboutme.admin.cat.edit"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Sửa danh mục" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/cat/edit.jsp" />
+	</definition>
+	<definition name="aboutme.admin.new.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách tin tức" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/index.jsp" />
+	</definition>
+	<definition name="aboutme.admin.new.add"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm tin tức" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/add.jsp" />
+	</definition>
+	<definition name="aboutme.admin.new.edit"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Sửa tin tức" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/edit.jsp" />
+	</definition>
+	<definition name="aboutme.admin.comment.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách bình luận" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/comment/index.jsp" />
+	</definition>
+	<definition name="aboutme.admin.user.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách người dùng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/index.jsp" />
+	</definition>
+	<definition name="aboutme.admin.user.add"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm người dùng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/add.jsp" />
+	</definition>
+	<definition name="aboutme.admin.contact.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách liên hệ" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/contact/index.jsp" />
+	</definition>
+	<definition name="aboutme.admin.information.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách thông tin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/information/index.jsp" />
+	</definition>
+	<definition name="aboutme.admin.information.add"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm thông tin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/information/add.jsp" />
+	</definition>
+
+	<definition name="aboutme.admin.information.edit"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Sửa thông tin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/information/edit.jsp" />
+	</definition>
+	<definition name="aboutme.admin.skill.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách kỹ năng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/skill/index.jsp" />
+	</definition>
+
+	<definition name="aboutme.admin.skill.add"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm kỹ năng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/skill/add.jsp" />
+	</definition>
+	<definition name="aboutme.admin.skill.edit"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm kỹ năng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/skill/edit.jsp" />
+	</definition>
+	<definition name="aboutme.admin.project.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Danh sách dự án" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/project/index.jsp" />
+	</definition>
+
+	<definition name="aboutme.admin.project.add"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm dự án" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/project/add.jsp" />
+	</definition>
+	<definition name="aboutme.admin.project.edit"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Sửa dự án" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/project/edit.jsp" />
+	</definition>
+	<definition name="aboutme.admin.manage.index"
+		extends="aboutme.admin.template">
+		<put-attribute name="title"
+			value="Danh sách chặng đường" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manage/index.jsp" />
+	</definition>
+	<definition name="aboutme.admin.manage.add"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm chặng đường" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manage/add.jsp" />
+	</definition>
+	<definition name="aboutme.admin.manage.edit"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Thêm chặng đường" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/manage/edit.jsp" />
+	</definition>
+	<definition name="aboutme.admin.new.search"
+		extends="aboutme.admin.template">
+		<put-attribute name="title" value="Tìm kiếm" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/search.jsp" />
+	</definition>
+
+</tiles-definitions>
